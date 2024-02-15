@@ -1,0 +1,834 @@
+@import url(common.css);
+
+/*==============================PC 용 CSS====================*/
+
+/*헤더*/
+header{
+    width:100%;
+    line-height:90px;
+     position:fixed;
+     z-index: 9999;
+}
+
+header a{color:#000;}
+
+.logo{
+    float:left;
+    width:15%;
+}
+
+.main_nav ul{
+     float:left;
+     width:50%;
+}
+
+.main_nav ul li{
+    float:left;
+    width:14%;
+   height:70px;
+    text-align: center;
+}
+
+.main_nav ul li a{font-size:1rem;color:#fff;}
+
+.main_nav ul li:hover a{font-weight:bold;}
+
+/*유틸메뉴*/
+.util_nav{
+     position:absolute;
+     right:0;
+     width:14%;
+     float:right;
+}
+
+.util_nav ul li{
+    float:left;
+    padding:0 3%;
+}
+
+.util_nav ul li a{color:#fff;}
+
+.util_nav ul li a:hover{font-weight: bold;}
+
+/*메인 비주얼*/
+
+.left{
+      width:65%;
+      float:left;
+}
+
+.gallery_bg .gallery1 img{height:820px;}
+
+.gallery_bg1{
+    width:35%;
+    overflow:hidden;
+    float:left;
+    position:relative;
+}
+
+.gallery_bg1 .gallery1 img{height:960px;}
+
+ .swiper-slide{position:relative;}
+
+/*비주얼 텍스트*/
+.bg1_txt{
+      position:absolute;
+      bottom:10%;
+      left:12%;
+      color:#fff;
+}
+
+.bg2_txt{
+      position:absolute;
+      bottom:10%;
+      left:5%;
+      color:#fff;
+}
+
+.bg1_txt h2,
+.bg2_txt h2{ font-size:5rem;line-height: 105px;}
+
+.bg1_txt p,
+.bg2_txt p{font-size:1.9em;}
+
+.bg2_txt h5{
+      font-size:1.5rem;
+      line-height: 20px;
+}
+
+.bg2_txt span{
+      line-height: 40px;
+      font-size:1rem;
+}
+
+.check{
+     position:absolute;
+      top:0;
+      left:0;
+      z-index: 22;
+      width:40%;
+      height:4%;
+      background: rgba(34, 199, 161, 0.42); /* Old browsers */
+      color:#fff;
+      font-size:1.4em;
+      padding-top: 1.6%;
+      text-indent: 20px;
+      font-weight: bold;
+      cursor: pointer;
+}
+
+.check span{
+      width:38%;
+      display:inline-block;
+}
+
+/*하단 출발지 */
+.flights{
+      width:100%;
+      height:140px;
+      background: #fff;
+}
+
+.flights ul li{
+      float:left;
+      width:13%;
+      height:30px;
+      text-align: left;
+      margin:3.4% 1% 0;
+      border-bottom:1px solid #717171;
+      padding:.7% 0.9%;
+}
+
+.flights ul li:first-child{
+      background:url(../image/i4.png) no-repeat 80% ;
+      background-size:12%;
+      background-position:right
+}
+
+.flights ul li:nth-child(2){
+      background:url(../image/i4.png) no-repeat 80% ;
+      background-size:12%;
+      background-position:right
+}
+
+.flights ul li:nth-child(3){
+      background:url(../image/i3.png) no-repeat 80% ;
+      background-size:12%;
+      background-position:right
+}
+
+.flights ul li:nth-child(4){
+      background:url(../image/i1.png) no-repeat 80% ;
+      background-size:12%;
+      background-position:right
+}
+
+.flights ul li:last-child{
+      background:url(../image/i2.png) no-repeat 80% ;
+      background-size:12%;
+      background-position:right
+}
+
+.flights ul li a{
+      color:#4e4e4e;
+      font-weight: bold;
+      padding-top: 5px;
+      display: block;
+      font-size:1.2em;
+}
+
+.flights button{
+      padding:10px 50px;
+      border-radius: 5px;
+      background:#c72222;
+      border:0;
+      color:#fff;
+      margin-top:3.6%;
+      margin-left:3%;
+      cursor: pointer;
+}
+
+.flights button:hover{opacity: 0.6;}
+
+/*컨텐츠 2  박스*/
+.article_section{
+      clear: both;
+      width:100%;
+     height:990px;
+      position:relative;
+      overflow: hidden;
+}
+
+.article_img li img{
+      width:100%;
+      max-width: 100%;
+     height:990px;
+      display:none;
+}
+
+.article_img li:nth-child(4) img{display:block}
+
+/*박스 텍스트*/
+.article_txt{
+      position:absolute;
+     width:100%;
+      top:0;
+      left:0;
+      z-index: 33;
+      color:#636b96;
+}
+
+.article_txt li{
+      float:left;
+      box-sizing: border-box;
+      border-right:1px solid #fff;
+      border-bottom:1px solid #fff;
+      padding-top:3%;
+      padding-left:3%;
+      cursor: pointer;
+      line-height: 21px;
+      color:#fff;
+}
+
+.article_txt li h4{
+      font-size:2.2em;
+      margin-bottom:10px;
+}
+
+.article_txt li p{margin:15px 0;font-size:14px;}
+
+.article_txt li .view{
+      display:inline-block;
+      border-bottom: 1px solid #fff;
+      font-size:1.5em;
+      font-weight: bold;
+      padding-bottom:5px;
+      padding-right:30px;
+      margin-top:20px;
+}
+
+.txt_none{display:none;}
+
+.article_txt li:first-child{width:40%;height:660px;}
+.article_txt li:nth-child(2){width:30%;height:330px}
+.article_txt li:nth-child(3){width:30%;height:330px}
+.article_txt li:nth-child(4){
+      width:30%;
+      height:330px;
+      background:rgba(130, 139, 188, 0.85);
+      color:#fff;
+}
+
+.article_txt li:nth-child(4) .txt_none{display:block;}
+.article_txt li:nth-child(4):hover{background:rgba(76, 84, 129, 0.62);}
+
+.article_txt li:nth-child(5){width:30%;height:330px}
+.article_txt li:nth-child(6){width:40%;height:330px}
+.article_txt li:nth-child(7){width:30%;height:330px}
+.article_txt li:nth-child(8){width:30%;height:330px}
+
+
+.article_txt li:hover{background:rgba(96, 195, 208, 0.87);}
+.article_txt li:hover .txt_none{display:block;}
+
+
+/*sky*/
+
+.sky {
+     width:100%;
+     height:780px;
+     position:relative;
+}
+
+/*배경*/
+.sky img{
+     width:100%;
+     max-width: 100%;
+     height:780px;
+}
+
+.sky_box{
+     position:absolute;
+     z-index: 44;
+     top:10%;
+     left:18%;
+     width:20%;
+}
+
+.sky_box h2{
+     font-size:4rem ;
+     color:rgba(96, 195, 208, 0.87);
+      margin-left:10px;
+}
+
+.sky_box> p{
+     font-size:0.8rem;
+     margin:10px 0;
+     line-height: 26px;
+     margin-left:10px;
+}
+
+.sky_input{
+     width:100%;
+     height:460px;
+     background:rgba(255, 255, 255, 0.46);
+     border-radius: 15px;
+     padding:10%;
+     box-sizing: border-box;
+      position:relative;
+}
+
+.sky_input >input{
+      display:block;
+      width:100%;
+      height:40px;
+      border-radius: 10px;
+      border:0;
+      text-indent: 10px;
+      margin:0 auto 20px;
+}
+
+.sky_input #number{
+      background:url(../image/i05.png)no-repeat 95% rgba(255, 255, 255, 0.76);;
+      background-size:7%;
+}
+
+.sky_input #place{
+      background:url(../image/i01.png)no-repeat 95% rgba(255, 255, 255, 0.76);;
+      background-size:7%;
+}
+
+.sky_input #date{
+      background:url(../image/i04.png)no-repeat 95% rgba(255, 255, 255, 0.76);;
+      background-size:7%;
+}
+
+.sky_box .txt{
+      font-size:11px;
+      margin-bottom:10px;
+      display:inline-block;
+     line-height: 22px;
+}
+
+.sky_input #name{
+      width:50%;
+      display:inline-block;
+      float:left;
+      background:url(../image/i02.png)no-repeat 90% rgba(255, 255, 255, 0.76);;
+      background-size:16%;
+}
+
+.zoom{
+      float:right;
+      padding-top:3px;
+      padding-right:18px;
+}
+
+.zoom input{
+      width:35px;
+      height:35px;
+      border:none;
+      border-radius: 10px;
+      text-align: center;
+      color:rgb(96, 195, 208)
+}
+
+.zoom button{
+      width:32px; 
+      height:32px; 
+      border:none;
+      background:#fff;
+      color:rgba(96, 195, 208, 0.99);
+      font-size:1.4rem;
+      border-radius: 10px;
+      vertical-align: middle;
+
+}
+
+.sky_input span{width:100%;}
+
+.sky_input > button{
+      width:100%;
+      height:40px;
+      border-radius: 10px;
+      background:rgba(96, 195, 208, 0.85);
+      border:0;
+      color:#fff;
+      cursor: pointer;
+      margin-top:15px;
+}
+
+.sky_input > button:hover{opacity: 0.9;box-shadow: 0 0 2px gray;}
+
+
+/*footer*/
+footer{
+      width:100%;
+      height:400px;;
+      padding:5% 0;
+}
+
+/*fotter 메뉴*/
+.foot1{
+      width:80%;
+      margin:0 auto;
+      border-bottom:1px solid rgba(96, 195, 208, 0.87);;
+      margin-bottom:50px;
+      padding-bottom:50px;
+}
+
+.foot1 .foot_nav{
+      width:16.6%;
+      float:left;
+}
+
+.foot1 .foot_nav li{
+      width:100%;
+      height:35px;
+      text-indent: 80px;
+}
+
+.foot1 .foot_nav li:first-child{height:60px;}
+
+.foot1 .foot_nav li strong{
+      color:rgba(96, 195, 208, 0.87);
+      font-size:1rem;
+      border-bottom:3px solid ;
+      padding-bottom:10px;
+      margin-bottom:10px;
+}
+
+.foot1 .foot_nav li a{color:#404341;}
+.foot1 .foot_nav li a:hover{color:rgba(96, 195, 208, 0.87);font-weight: bold;transition:all 0.8s; }
+
+/*fototer 주소 sns*/
+.foot2{
+      width:80%;
+      margin:0 auto;
+}
+
+.foot2_txt{
+      width:60%;
+      float:left;
+      margin-left: 80px;
+      line-height: 30px;
+      color:#404341;
+}
+
+.foot2_sns{
+      width:20%;
+      overflow: hidden;
+      float:right;
+}
+
+.foot2_sns ul li{float:left;width:50px;cursor: pointer;}
+
+
+/*==============================태블릿 용 CSS====================*/
+
+@media all and (max-width:1024px){
+      
+      .logo{margin-left:20px;}
+
+      /*유틸메뉴 없애기*/
+      .util_nav{display: none;}
+      
+      /*메인 메뉴 바꾸기*/
+ 
+       .main_nav ul{float:right;width:70%;}
+
+        .main_nav ul li{width:16%;padding-top:10px;}
+     
+        .main_nav ul li a{font-size:0.7rem; }
+      
+      /*비쥬얼*/
+      .left{width:100%; height: auto;}
+
+     .gallery_bg .gallery1 img{height:530px;}
+     
+      .gallery_bg1{display:none;}
+      
+      .bg2_txt{bottom:10%;}
+      
+      .bg2_txt h2{ font-size:5em;line-height:100px;}
+
+      .bg2_txt p{font-size:1.4em;}
+
+      .bg2_txt h5{ font-size:1.3rem;line-height:10px;}
+
+      .bg2_txt span{font-size:0.8rem;}
+      
+      .check{display:none;}
+      
+      .flights ul li{
+            width:12.5%;
+            margin:5.2% 1.7% 0;
+      }
+      
+      .flights ul li a{font-size:1em;}
+
+      .flights button{
+            padding:10px 21px;
+            margin-top:5.2%;
+            margin-left:1%;
+      }
+
+      /*박스 텍스트*/
+
+      .article_section{ height:420px;}
+     
+     .article_img li img{ height:420px;}
+     
+     .ariticle_txt{width:100%;}
+     
+      .article_txt li h4{font-size:1.5em;}
+
+      .article_txt li:first-child{height:420px;}
+
+      .article_txt li:nth-child(2){height:210px}
+
+      .article_txt li:nth-child(3){height:210px}
+
+      .article_txt li:nth-child(4){height:210px;}
+      
+      .article_txt li:nth-child(4)  p{display:none;}
+
+      .article_txt li:nth-child(5){height:210px}
+
+      .article_txt li:nth-child(6){display:none;}
+
+      .article_txt li:nth-child(7){display:none;}
+
+      .article_txt li:nth-child(8){display:none;}
+
+      .article_txt li:hover .txt_none p{display:none;}
+      
+      /*sky*/
+
+      .sky {height:620px;}
+
+      /*배경*/
+      .sky img{ height:620px;}
+
+      .sky_box{
+           top:5%;
+           width:50%;
+           left:12%;
+      }
+
+      .sky_box h2{font-size:2rem ;}
+
+      .sky_input{width:80%;}
+      .sky_input >input{height:34px}
+
+      .sky_input #name{width:44%;}
+     
+     .zoom{padding-right:0px;}
+
+     .zoom input{
+           width:30px;
+           height:30px;
+     }
+
+     .zoom button{
+           width:30px; 
+           height:30px; 
+     }
+     
+      .sky_input > button{height:35px; }
+      
+      /*footer*/
+      
+      footer{height:460px;}
+
+     .foot1, .foot2{width:100%;}
+     
+      .foot1 .foot_nav{width:20%;}
+     
+     .foot1 ul:last-child{display:none;}
+
+      .foot1 .foot_nav li{text-indent: 30px;
+     text-indent: 30px;}
+
+      /*fototer 주소 sns*/
+      .foot2_txt{margin-left: 40px;}
+
+      .foot2_sns{width:25%;}
+
+      .foot2_sns ul li{width:40px;}
+
+      
+}
+
+
+
+/*==============================모바일 용 CSS====================*/
+
+
+@media screen and (max-width:640px){
+      
+          header{
+          position:absolute;
+          top:0;
+     }
+
+     
+      .main_nav{
+            position:fixed;
+            top:0px;
+            width:100%;
+            height:100%;
+            background:rgba(255, 255, 255, 0.8);
+            z-index: 999;
+            display:none;
+      }
+      
+      .main_nav ul{width:100%;margin-top:100px;}
+      
+      .main_nav ul li{
+            float:none;
+            width:100%;
+            height:60px;
+            line-height: 60px;
+       }
+
+     .main_nav ul li a{font-size:0.8rem;color:#333;}
+
+      .main_nav ul li:hover{border:none;}
+
+      .main_nav ul li:hover a{font-weight:bold;color:#eb1b1b;}
+
+       /*토글 버튼*/
+      .menu_toggle_btn{
+          position:absolute;
+          top:55px;
+          right:20px;
+          z-index: 10000;
+          cursor: pointer;
+          display:block;
+          width:40px;
+          height:40px;
+          background:none;
+          outline: none;
+          border:none;
+          margin:0;
+     }
+
+     .menu_toggle_btn span{  /*가운데 x button*/
+          position:absolute;
+          left:0;
+          top:-2px;
+          width:70%;
+          height:4px;
+          background:rgb(204, 204, 204);;
+          content:'';
+          transition:all 0.3s;
+          margin-left:15%;
+     }
+
+     .menu_toggle_btn:before,
+     .menu_toggle_btn:after{
+          position:absolute;
+          left:0;
+          width:70%;
+          height:4px;
+          background:rgb(212, 212, 212);;
+          content:'';
+          transition:all 0.3s;
+          margin-left:15%;
+     }
+
+     .menu_toggle_btn:before{transform:translateY(-10px);}
+     .menu_toggle_btn:after{transform:translateY(6px);}
+
+     /*제이쿼리에서 불러낼 메뉴오픈 클래스*/
+     .menu_toggle_btn.menu-open:before{transform: translateY(0px)rotate(135deg);}
+     .menu_toggle_btn.menu-open:after{transform: translateY(0px)rotate(-135deg);}
+     .menu_toggle_btn.menu-open  span{opacity: 0;}
+
+      /*비주얼*/
+      
+     .gallery_bg .gallery1 img{height:330px;}
+     
+      .bg2_txt h2{ font-size:2.3em;line-height:50px;}
+
+      .bg2_txt p{font-size:1.3em;}
+
+      .bg2_txt h5{ font-size:1.1rem;line-height:10px;}
+
+      .bg2_txt span{font-size:0.8rem;}
+
+      .flights{display:none;}
+      
+      /*컨텐츠 박스*/
+      
+      .article_section{height:400px;}
+     
+     .article_img li img{ height:400px;}
+      
+      .article_txt li{padding-right:10px;}
+      
+      .article_txt{width:100%;}
+
+      .article_txt li h4{font-size:1em;}
+      
+      .txt_none{display:block;}
+      .txt_none p{display:none;}
+      
+      .article_txt li .view{font-size:0.7em}
+      
+      .article_txt li:first-child{
+           width:100%;
+           height:200px;
+     } 
+
+      .article_txt li:nth-child(2){
+            width:50%;
+            height:200px;
+            background:rgba(96, 195, 208, 0.74);;
+      }
+
+      .article_txt li:nth-child(3){            
+            width:50%;
+            height:200px;
+            background:rgba(76, 84, 129, 0.78);}
+
+      .article_txt li:nth-child(4){display:none;}
+
+      .article_txt li:nth-child(5){display:none;}
+     
+     .article_txt li:hover{background:rgba(96, 195, 208, 0.74)}
+      
+      /*sky*/
+      .sky{height:500px;}
+      
+      .sky img{height:500px;}
+      
+      .sky_box{
+            width:70%;
+            top:3%;
+            left:5%;
+      }
+      
+      .sky_input{
+            height:360px;
+             padding:8%;
+      }
+      
+      .sky_input >input{
+            width:100%;
+            height:30px;
+            border-radius: 10px;
+            margin-bottom:13px;
+      }
+      
+      .sky_input > button{
+            height:30px;
+            margin-top:10px;
+      }
+     
+     .sky_input #name{
+          width:50%;
+     }
+     
+     .zoom{padding-right:0px;}
+
+     .zoom input{
+           width:23px;
+           height:24px;
+     }
+
+     .zoom button{
+           width:23px; 
+           height:24px; 
+     }
+
+         /*footer*/
+     
+     .foot1, .foot2{width:80%;}
+
+      footer{height:300px;padding-top:40px;}
+      
+      .foot1{
+            padding-bottom:25px;
+            margin-bottom:25px;
+      }
+
+      .foot1 .foot_nav{width:45%;}
+      
+      .foot1 ul:nth-child(2),
+      .foot1 ul:nth-child(3),
+      .foot1 ul:nth-child(4),
+      .foot1 ul:nth-child(5){display:none;}
+      
+      .foot1 .foot_nav li{text-indent: 0px;}
+
+      /*fototer 주소 sns*/
+      .foot2_txt{display:none;}
+
+      .foot2_sns{width:100%;}
+      
+      
+      
+      
+      
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
